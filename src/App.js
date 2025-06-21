@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { BarChart, Bar } from 'recharts';
+
 
 function App() {
   return (
