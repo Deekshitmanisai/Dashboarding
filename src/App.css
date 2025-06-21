@@ -1,4 +1,4 @@
-/* Base Reset and Font */
+Base Reset and Font
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -155,3 +155,53 @@ button:hover {
   padding-left: 1.5rem;
 }
 
+/* Global Dark Mode overrides */
+.dark-mode body {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+/* Ensure .main-content text is white in dark mode */
+.dark-mode .main-content {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+/* Calendar fix */
+.dark-mode .fc {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+/* Buttons and headers in Calendar */
+.dark-mode .fc-toolbar-title,
+.dark-mode .fc-button,
+.dark-mode .fc-col-header-cell,
+.dark-mode .fc-daygrid-day-number {
+  color: #f3f4f6;
+}
+
+/* Optional: Style today’s cell background in dark mode */
+.dark-mode .fc-day-today {
+  background-color: #334155 !important;
+}
+ 
+/* Kanban Board dark mode fix */
+.dark-mode .kanban-board h3,
+.dark-mode .kanban-column h4,
+.dark-mode .kanban-card {
+  color: #f3f4f6;
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+/* Ensure good contrast for cards */
+.dark-mode .kanban-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+}
+
+/* Optional: column background (if any) */
+.dark-mode .kanban-column {
+  background-color: #1f2937;
+}
